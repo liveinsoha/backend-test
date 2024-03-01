@@ -10,4 +10,10 @@ spring:
 
   jpa:
     hibernate:
-      ddl-auto: none
+      ddl-auto: none #create update none
+    properties:
+      hibernate:
+        default_batch_fetch_size: 100
+        #show-sql: true
+        format_sql: true
+        dialect: org.hibernate.dialect.MySQLDialect
